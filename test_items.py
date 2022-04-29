@@ -10,4 +10,4 @@ def test_shopping_cart_button(browser, linkac):
     link = linkac
     browser.get(link)
     bt = browser.find_elements(By.CSS_SELECTOR, '.btn.btn-lg.btn-primary.btn-add-to-basket')
-    assert len(bt) > 0, 'button not found'
+    assert len(bt) == 0, 'button not found'
